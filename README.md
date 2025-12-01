@@ -13,7 +13,7 @@
 
 ##  Project Overview
 
-This repository provides a complete Docker-based setup to run **WordPress** with a **MariaDB** backend using `docker-compose`.  
+This repository provides a complete Docker-based setup to run **WordPress** with a **MariaDB** backend using `docker compose`.  
 
 
 ## Quickstart
@@ -29,6 +29,7 @@ This repository provides a complete Docker-based setup to run **WordPress** with
 ```bash
 docker-compose up -d
 ```
+-d  Detached mode: Run containers in the background
 
 Once the containers are up, visit:
 
@@ -43,21 +44,22 @@ http://ur-vm-ip:8080
 ### Start the stack
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
-
+-d  Detached mode: Run containers in the background
 
 ### Stop the stack
 
 ```bash
-docker-compose down
+docker compose down
 ```
 
 To remove volumes as well:
 
 ```bash
-docker-compose down -v
+docker compose down -v
 ```
+ -v Remove named volumes declared in the "volumes" section of the Compose file
 
 ### Restart the stack
 
