@@ -34,10 +34,15 @@ docker-compose up -d
 Once the containers are up, visit:
 
 ```text
-http://ur-vm-ip:8080
+http://ur-vm-ip:8080 
 ```
+and follow the first usage steps adding admin user and password
 
+for adding articles the admin console can be used under: 
 
+```text
+http://ur-vm-ip:8080/wp-admin
+```
 ##  Usage
 
 
