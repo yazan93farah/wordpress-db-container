@@ -1,5 +1,8 @@
 # 📦 Wordpress Docker Setup
 
+
+This repository provides a complete Docker-based setup to run **WordPress** with a **MariaDB** backend using `docker compose`.  
+
 ##  Table of Contents
 
 1. [Project Overview](#project-overview)
@@ -8,12 +11,6 @@
 4. [Environment Variables](#environment-variables)
 5. [Volumes & Data Persistence](#volumes--data-persistence)
 6. [Networking](#networking)
-
-
-
-##  Project Overview
-
-This repository provides a complete Docker-based setup to run **WordPress** with a **MariaDB** backend using `docker compose`.  
 
 
 ## Quickstart
@@ -26,6 +23,20 @@ This repository provides a complete Docker-based setup to run **WordPress** with
 
 ### Start the stack
 
+first clone this Repository and change directory to the Repo directory 
+
+```bash
+cd wordpress-db-container
+```
+
+then create .env using the example.env and  configure it like needed
+
+
+```bash
+cp example.env .env
+```
+ now the stack can be started
+
 ```bash
 docker-compose up -d
 ```
@@ -34,14 +45,14 @@ docker-compose up -d
 Once the containers are up, visit:
 
 ```text
-http://ur-vm-ip:8080 
+http://<your-ip>:8080 
 ```
 and follow the first usage steps adding admin user and password
 
 for adding articles the admin console can be used under: 
 
 ```text
-http://ur-vm-ip:8080/wp-admin
+http://<your-ip>:8080/wp-admin
 ```
 ##  Usage
 
