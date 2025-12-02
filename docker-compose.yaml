@@ -14,7 +14,7 @@ services:
       - wpnet
 
   wordpress:
-    image: wordpress:latest
+    image: wordpress:6.8.3
     container_name: wordpress-container
     ports:
       - "${WORDPRESS_HTTP_PORT:-8080}:80"     
