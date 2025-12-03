@@ -1,5 +1,4 @@
-# 📦 Wordpress Docker Setup
-
+#  Wordpress Docker Setup
 
 This repository provides a complete Docker-based setup to run **WordPress** with a **MariaDB** backend using `docker compose`.  
 
